@@ -1,17 +1,12 @@
 # My Portfolio Page
 
 A personal portfolio built with **React** to showcase my projects, resume, and skillsets. This site provides an engaging way to explore my work, skills, and connect with me.
+🛠️ Technologies Used: <code>React</code> <code>JavaScript</code> <code>CSS</code> <code>GitHub Pages</code>
+
 
 ## 🌐 Live Demo
-
-[VIEW LIVE PAGE](https://josuecaztro.github.io/portfolio-pg/) ⬅️
-
-🛠️ Technologies Used : <code>React</code><code>JavaScript</code><code>CSS</code><code>GitHub Pages</code>
-
-- **React**: For building a dynamic and responsive UI.
-- **JavaScript (ES6+)**: Leveraged for efficient code.
-- **CSS** & **HTML5**: Structured content with custom styling.
-- **Hosting**: Deployed on GitHub Pages / Netlify / Vercel (choose your hosting).
+View the Portfolio page now! 
+[CLICK HERE](https://josuecaztro.github.io/portfolio-pg/) ⬅️
 
 ## 🔆 Features
 
