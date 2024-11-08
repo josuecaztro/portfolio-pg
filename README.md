@@ -4,7 +4,7 @@ A personal portfolio built with **React** to showcase my projects, resume, and s
 
 ## 🌐 Live Demo
 
-[CLICK HERE to VIEW](https://josuecaztro.github.io/portfolio-pg/) ⬅️
+[VIEW LIVE PAGE](https://josuecaztro.github.io/portfolio-pg/) ⬅️
 
 ## 🛠️ Technologies Used
 
