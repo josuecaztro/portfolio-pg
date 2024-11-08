@@ -1,6 +1,7 @@
-# My Portfolio Page
+# Josue's Portfolio Page
 
-A personal portfolio built with **React** to showcase my projects, resume, and skillsets. This site provides an engaging way to explore my work, skills, and connect with me.
+A personal portfolio built with **React** to showcase my projects, resume, and skillsets. My goal is to provide an engaging way to explore my work and connect with me. 
+
 🛠️ Technologies Used: <code>React</code> <code>JavaScript</code> <code>CSS</code> <code>GitHub Pages</code>
 
 
