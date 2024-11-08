@@ -1,12 +1,26 @@
 import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './Containers/Home/homeindex';
+import AboutPage from './Containers/About/aboutindex';
+import ContactPage from './Containers/Contact/contactindex';
+import PortfolioPage from './Containers/Portfolio/portfolioindex';
+import ResumePage from './Containers/Resume/resumeindex';
+import SkillsPage from './Containers/Skills/skillsindex';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <h1>Hola, SOY DORA!</h1>
-     <p>This is my website, from react to Github pages.</p>
-     <p>What's <strong>YOUR</strong> name?</p>
+
+    <Routes>
+      <Route index path="/" element={<HomePage/>}/>
+      <Route path="/about" element={<AboutPage/>}/>
+      <Route path="/resume" element={<ResumePage/>}/>
+      <Route path="/contact" element={<ContactPage/>}/>
+      <Route path="/portfolio" element={<PortfolioPage/>}/>
+      <Route path="/skills" element={<SkillsPage/>}/>
+    </Routes>
+
     </div>
   );
 }
