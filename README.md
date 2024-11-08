@@ -13,7 +13,7 @@ A personal portfolio built with **React** to showcase my projects, resume, and s
 - **CSS** & **HTML5**: Structured content with custom styling.
 - **Hosting**: Deployed on GitHub Pages / Netlify / Vercel (choose your hosting).
 
-## 🚀 Features
+## 🔆 Features
 
 - **Project Showcase**: Displays past and future projects with descriptions, tech stacks, and links.
 - **Downloadable Resume**: View and download my latest resume.
@@ -28,9 +28,3 @@ A personal portfolio built with **React** to showcase my projects, resume, and s
 
 - **Projects Page**  
   Coming soon!
-
-## ⚙️ Installation & Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/your-repository-name.git
