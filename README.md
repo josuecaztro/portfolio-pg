@@ -19,8 +19,8 @@ View the Portfolio page now!
 
 ## 📸 Screenshots
 
-- **Home Page**  
+- **<code>Home Page</code>**  
   Coming soon!
 
-- **Projects Page**  
+- **<code>Projects Page</code>**  
   Coming soon!
