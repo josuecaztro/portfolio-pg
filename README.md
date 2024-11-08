@@ -6,7 +6,7 @@ A personal portfolio built with **React** to showcase my projects, resume, and s
 
 [VIEW LIVE PAGE](https://josuecaztro.github.io/portfolio-pg/) ⬅️
 
-## 🛠️ Technologies Used : <code>React</code><code>JavaScript</code><code>CSS</code><code>GitHub Pages</code>
+🛠️ Technologies Used : <code>React</code><code>JavaScript</code><code>CSS</code><code>GitHub Pages</code>
 
 - **React**: For building a dynamic and responsive UI.
 - **JavaScript (ES6+)**: Leveraged for efficient code.
