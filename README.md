@@ -11,11 +11,11 @@ View the Portfolio page now!
 
 ## 🔆 Features
 
-- **Project Showcase**: Displays past and future projects with descriptions, tech stacks, and links.
+- **Project Showcase**: Displays all of my past and future projects, or any achievement I'm proud of.
 - **Downloadable Resume**: View and download my latest resume.
 - **Skill Highlights**: Lists technical and soft skills.
-- **Responsive Design**: Optimized for desktop, tablet, and mobile.
-- **Interactive UI**: Smooth navigation and engaging user experience.
+- **Responsive Design**: Optimized for any desktop, tablet, or mobile device.
+- **Interactive UI**: Smooth navigation with engaging, animated user experience.
 
 ## 📸 Screenshots
 
