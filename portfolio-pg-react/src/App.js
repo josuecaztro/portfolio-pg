@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
@@ -8,6 +7,7 @@ import ContactPage from './Containers/Contact/contactindex';
 import PortfolioPage from './Containers/Portfolio/portfolioindex';
 import ResumePage from './Containers/Resume/resumeindex';
 import SkillsPage from './Containers/Skills/skillsindex';
+import Navbar from './Components/NavBar/navbarindex';
 import './App.css';
 
 function App() {
@@ -21,12 +21,14 @@ function App() {
   function RedirectToHome(){
     useEffect(() => {
     navigate("/");
-    },[navigate]);
+    },[]);
   }
   RedirectToHome();
 
   return (
     <div className="App">
+
+    <Navbar/>
 
     <Routes>
       <Route index path="/" element={<HomePage/>}/>
