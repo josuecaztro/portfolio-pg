@@ -1,0 +1,93 @@
+.nav-bar {
+    background-color: var(--yellow-theme-nav-bg-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    padding: 0px 20px;
+    flex: 1;
+}
+
+.nav-bar-logo {
+    color: var(--yellow-theme-main-color);
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.toggle-icon {
+    display: none;
+}
+
+.nav-menu-item {
+    line-height: 40px;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+
+    // These two functions here are what animate a yellow line under the hover of page labels
+    &::after{
+        content: '';
+        display: block;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: all 0.5s ease;
+    }
+
+    &:hover::after{
+        width: 100%;
+        background: var(--yellow-theme-main-color);
+    }
+
+    &-links{
+        color: var(--yellow-theme-main-color);
+        text-decoration: none;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+
+        &.active {
+            background: #181818;
+            left: 0px;
+            opacity: 1;
+        }
+
+        &-item {
+            border-bottom: 1px solid #282828;
+            margin: 0px;
+            padding: 20px 0px;
+        }
+    }
+
+    .toggle-icon {
+        display: block;
+        cursor: pointer;
+        color: var(--yellow-theme-main-color);
+        padding-right: 20px;
+    }
+}
+

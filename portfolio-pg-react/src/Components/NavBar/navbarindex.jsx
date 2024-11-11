@@ -1,6 +1,8 @@
-import React from 'react';
-import { FaReact } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaBars, FaReact } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { HiX } from 'react-icons/hi';
+import './navbarstyles.scss';   
 
 
 const Navbar = () => {
@@ -31,6 +33,13 @@ const Navbar = () => {
             to : "/skills"
         }
     ]
+    //MANAGE TOGGLE STATE USING USESTATE
+    const [toggleIcon, setToggleIcon] = useState(false);
+
+    //TOGGLE THE BOOLEAN FROM TRUE OR FALSE
+    const handleToggleIcon = () => {
+        setToggleIcon(!toggleIcon);
+    };
 
     return (
         <div>
@@ -41,7 +50,7 @@ const Navbar = () => {
             </Link>
             </div>
 
-            <ul className='nav-menu'>
+            <ul className={`nav-menu ${toggleIcon ? 'active' : ''}`}>
 
             {dummyData.map( (item,key) => (
                 <li key={key} className='nav-menu-item'>
@@ -53,6 +62,9 @@ const Navbar = () => {
 
 
             </ul>
+            <div className='toggle-icon' onClick={handleToggleIcon}>
+            {toggleIcon ? <HiX size={30}/> : <FaBars size={30}/>}
+            </div>
 
 
             </nav>
