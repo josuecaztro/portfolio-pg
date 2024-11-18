@@ -8,25 +8,29 @@ import PortfolioPage from './Containers/Portfolio/portfolioindex';
 import ResumePage from './Containers/Resume/resumeindex';
 import SkillsPage from './Containers/Skills/skillsindex';
 import Navbar from './Components/NavBar/navbarindex';
+import Particles from "@tsparticles/react";
+import { loadFull } from 'tsparticles';
+import particles from './utils.js/particles';
 import './App.css';
 
 function App() {
 
-  //This is an attempt to fix the root pages issue. If no luck, delete this up to function invoke. 
-  /* UPDATE: Okay, it looks like for now it works.
-   The only true way to know for sure is to wait
-  until we code the navbar and we can toggle
-  between Routes. Thats how we will know for sure. */ 
-  const navigate = useNavigate();
-  function RedirectToHome(){
-    useEffect(() => {
-    navigate("/");
-    },[]);
+  // const navigate = useNavigate();
+  // function RedirectToHome(){
+  //   useEffect(() => {
+  //   navigate("/");
+  //   },[]);
+  // }
+  // RedirectToHome();
+
+  const handleInit = async (main) => {
+    await loadFull(main);
   }
-  RedirectToHome();
 
   return (
     <div className="App">
+
+    <Particles id="particles" options={particles} init={handleInit}/>
 
     <Navbar/>
 
