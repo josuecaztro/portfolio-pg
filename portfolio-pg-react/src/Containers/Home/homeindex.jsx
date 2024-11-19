@@ -1,10 +1,17 @@
 import React from "react";
+import './homestyles.scss';
 
 const HomePage = () => {
     return (
-        <div>
-            <h2>This is the HOME page.</h2>
-        </div>
+        <section id="home" className="home">
+            <div className="home-text-wrapper">
+            <h1>
+                Hello, I'm Josue
+                <br/>
+                Full stack developer
+            </h1>
+            </div>
+        </section>
     )
 }
 

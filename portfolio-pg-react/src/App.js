@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './Containers/Home/homeindex';
 import AboutPage from './Containers/About/aboutindex';
 import ContactPage from './Containers/Contact/contactindex';
@@ -11,7 +11,7 @@ import Navbar from './Components/NavBar/navbarindex';
 // import Particles from 'react-tsparticles';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from 'tsparticles';
-import './App.css';
+import './App.scss';
 
 import { useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
@@ -19,6 +19,9 @@ import { loadSlim } from "@tsparticles/slim";
 function App() {
 
   const [init, setInit] = useState(false);
+  const location = useLocation();
+  console.log(location);
+  const renderParticleInHome = location.pathname === "/"; 
 
   // const navigate = useNavigate();
   // function RedirectToHome(){
@@ -100,7 +103,7 @@ function App() {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 180,
         },
         opacity: {
           value: 0.5,
@@ -117,16 +120,16 @@ function App() {
   return (
     <div className="App">
 
-
+{renderParticleInHome && (
 <Particles id="particles" options={myOptions} init={handleInit}/>
-{/* <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={myOptions}/> */}
+)}
 
 
 
     <Navbar/>
 
 
-
+<div className='App-main-page-content'>
     <Routes>
       <Route index path="/" element={<HomePage/>}/>
       <Route path="/about" element={<AboutPage/>}/>
@@ -135,7 +138,7 @@ function App() {
       <Route path="/portfolio" element={<PortfolioPage/>}/>
       <Route path="/skills" element={<SkillsPage/>}/>
     </Routes>
-
+</div>
     </div>
   );
 }
