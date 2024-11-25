@@ -23,13 +23,13 @@ function App() {
   console.log(location);
   const renderParticleInHome = location.pathname === "/"; 
 
-  // const navigate = useNavigate();
-  // function RedirectToHome(){
-  //   useEffect(() => {
-  //   navigate("/");
-  //   },[]);
-  // }
-  // RedirectToHome();
+  const navigate = useNavigate();
+  function RedirectToHome(){
+    useEffect(() => {
+    navigate("/");
+    },[]);
+  }
+  RedirectToHome();
 
   const handleInit = async (main) => {
     console.log('Initializing particles...');
@@ -96,14 +96,16 @@ function App() {
             default: "bounce",
           },
           random: false,
-          speed: 6,
+          speed: 4,
+          // speed: 6,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 180,
+          value: 250,
+          // value: 180,
         },
         opacity: {
           value: 0.5,
